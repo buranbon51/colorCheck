@@ -14,9 +14,15 @@ SetWorkingDir, %A_ScriptDir%
 
 #Include %A_ScriptDir%\src\guiColorFactory.ahk
 
+#Include %A_ScriptDir%\onlyHere\argUseColorCheckAfter.ahk
+
 cochf_atlp_initGui38()
 
 Menu, Tray, Add, colorCheck(&H), masu_SubMyColorBox
+Menu, Tray, Add
+Menu, Tray, Add, colorCheckを終了(&X), masu_SubColorBoxExitApp
+
+Menu, Tray, NoStandard
 Menu, Tray, Default, colorCheck(&H)
 Menu, Tray, Click, 1
 
