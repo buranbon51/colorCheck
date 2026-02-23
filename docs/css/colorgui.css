@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+
+
+
+.articleClass {
+    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-left: 5px;
+
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    font-family: 'BIZ UDゴシック','メイリオ',Meiryo,'Segoe UI',Calibri,Arial,Sans-Serif;
+
+    background-color: #fff;
+    -moz-border-radius: 10px;/*for Firefox*/
+    -webkit-border-radius: 10px;/*for Safari and chrome*/
+    border-radius: 10px;
+
+}
+
+#mainId {
+    background-color: #000;
+}
+
+.h1-first {
+
+    margin-top: 20px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    margin-left: -20px;
+    padding: 15px 20px;
+
+
+    font-size: 1.6rem;
+
+    color: #000;
+    text-shadow: 3px 3px 3px rgba(255, 255, 255, .8);
+    background: -webkit-linear-gradient(#d7ff96, #96e632);
+    background: linear-gradient(#d7ff96 , #96e632);
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: #0F276C;
+
+    -moz-border-radius: 10px;/*for Firefox*/
+    -webkit-border-radius: 10px;/*for Safari and chrome*/
+    border-radius: 10px;
+}
+
+
+div.example-one-color{
+    /*    d-type-basicで マージンを開けるため、あえて指定しない  */
+    /*    margin: 10px 0;*/
+    margin-left: -20px;
+    padding: 1px 20px;
+    /*    border: 2px solid #27FF7C;*/
+
+    background-color: #E0F0FF;
+    -moz-border-radius: 10px;/*for Firefox*/
+    -webkit-border-radius: 10px;/*for Safari and chrome*/
+    border-radius: 10px;
+    behavior: url(../itemCss/border-radius.htc);/*for IE*/
+}
+
+.example-one-caption-color{
+    /*    padding-left: 20px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    quotes: "[ " " ]";
+}
+
+.example-one-caption-color::before{
+    content: open-quote;
+}
+
+.example-one-caption-color::after{
+    content: close-quote;
+}
+
+/*  設定項目  ブロックで。 creation-oneで囲まない */
+div.creation-item-block-color{
+    margin: 20px 0 0;
+    padding-left: 30px;
+    /*  border-bottom  のみ 1px */
+    border-top: 2px solid #7CF7FF;
+    border-right: 2px solid #7CF7FF;
+    border-left: 2px solid #7CF7FF;
+    border-bottom: 1px solid #7CF7FF;
+    background-color: #FFFFFF;
+}
+
+/*  設定の値  ブロックで */
+div.creation-variable-block-color{
+    margin: 0 0 20px;
+    padding-left: 2.5em;
+    padding-right: 10px;
+    text-indent: -2em;
+
+    /*  border-top  のみ 1px */
+    border-top: 1px solid #7CF7FF;
+    border-right: 2px solid #7CF7FF;
+    border-left: 2px solid #7CF7FF;
+    border-bottom: 2px solid #7CF7FF;
+    background-color: #FFFFFF;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: auto;
+}

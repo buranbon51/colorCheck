@@ -1,0 +1,438 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head prefix="og: https://ogp.me/ns#">
+
+<meta charset="utf-8">
+
+<meta name="keywords" content="colorCheckの説明,TextRunRun,テキストランラン,テキストルンルン">
+<meta name="description" content="AutoHotkeyで、色を簡易的に確認するものを作ったのでその説明をしている">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone-no">
+
+<link rel="shortcut icon" href="common/imgCommon/shorticon.ico">
+<link rel="apple-touch-icon" href="common/imgCommon/touchicon.png" />
+<link rel="icon" sizes="192x192" href="common/imgCommon/icon192.png" />
+
+
+<title>colorCheckの説明 - ブランボンのGitHubPagesのやつ</title>
+
+<link type="text/css" href="common/cssCommon/resetAll.css" rel="stylesheet" />
+<link type="text/css" href="common/cssCommon/buBootstrap.css" rel="stylesheet" />
+
+<link type="text/css" href="common/cssCommon/commonCssbu.css" rel="stylesheet" />
+<link type="text/css" href="css/otherSoft.css" rel="stylesheet" />
+<link type="text/css" href="css/colorgui.css" rel="stylesheet" />
+
+    <script src="common/jQuery/jquery.min.js"></script>
+    <script src="common/javaScript/jQueryMenuSlide.js"></script>
+
+</head>
+<body>
+
+<div id="allContents">
+
+    <header id="header-toppage">
+        <div id="bg-headerbg"></div>
+        <div id="header-contents">
+            <div id="div-header-title">
+                <div id="header-title-2">
+                    <h1 id="alltop-title">
+                        ブランボン<span class="alltop-title-little">の</span><br class="br-mobile-only" /><span class="alltop-title-little2">GitHub Pages</span><span class="alltop-title-little">のやつ</span>
+                    </h1>
+                </div>
+            </div>
+            <nav id="nav-head-trrPage">
+                <div id="div-head-trrPage">
+                    <p class="p-head-trrPage1">
+                        関連ページ
+                    </p>
+                    <div class="trrhomepage-block">
+                        <a href="https://textrunrunburanbon.com" target="_blank">TextRunRunの説明を見るページ</a>
+                    </div>
+                </div>
+            </nav>
+            <div id="pagetop-first"></div>
+        </div>
+    </header>
+
+<div id="page-contents">
+
+<main id="mainId">
+
+<article class="articleClass">
+
+<h1 class="h1-first"><span class="spacePlus-r">colorCheck</span>の説明</h1>
+
+
+<div class="width-short">
+    <div class="div-section-one d-type-basic">
+        <nav class="index-thispage">
+            <h2 class="t-index-thispage">このページの目次</h2>
+            <ul class="ul-index-preface">
+                <li>
+                    <a href="#title_preface">前書き</a>
+                </li>
+            </ul>
+            <ul class="ul-index-thispage">
+                <li>
+                    <a href="#title1">起動の仕方</a>
+                </li>
+                <li>
+                    <a href="#title2">colorCheck の事あれこれ</a>
+                    <ul class="ul-index-thispage-2">
+                        <li>
+                            <a href="#title2_1">終了の仕方</a>
+                        </li>
+                        <li>
+                            <a href="#title2_2">スライドバー</a>
+                        </li>
+                        <li>
+                            <a href="#title2_3">ボタン</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div><!--  div-section-one  -->
+    <section id="title_preface" class="sectionFirst d-type-basic">
+        <h1 class="t-preface">
+            <span class="t-preface-inner">前書き</span>
+        </h1>
+        <p class="p-sub">
+            ここでは、
+            <span class="softName-bu-r">colorCheck</span>
+            と名付けたものについて説明します。
+        </p>
+        <p class="p-sub">
+            これを起動すると、以下の様なウインドウが表示します。
+        </p>
+        <div class="img-div">
+            <img src="image/colorgui.png" alt="画像" class="img-w-300px">
+        </div>
+        <div class="bundle">
+            <p class="p-sub">
+                この
+                <span class="softName-bu-s">colorCheck</span>
+                は、色を確認するために使うものです。
+            </p>
+        </div>
+        <p class="p-sub">
+            一番上の入力欄に、よくある
+            <em class="em-basic">RGB形式</em>
+            の１６進数の６桁の文字を入力します。<br />
+            &#40;
+            ３桁でも可能。
+            &#41;
+        </p>
+        <p class="p-sub">
+            そして
+            <kbd class="keyAny-bu-s">Enter</kbd>
+            キーを押すと、ウインドウ内の色が変更するので、それで色が確認できるというやつです。
+        </p>
+        <p class="p-sub">
+            そのついでに、下にある入力欄とスライドバーのコントロールに、１６進数と１０進数の数が反映される様になっています。
+        </p>
+    </section><!-- sectionFirst -->
+    <section id="title1" class="sectionFirst d-type-basic">
+        <h1 class="t-lank1">起動の仕方</h1>
+        <p class="p-sub">
+            この
+            <span class="softName-bu-s">colorCheck</span>
+            を使うには、
+            <span class="othersoft-r">AutoHotkey.exe</span>
+            が必要です。
+        </p>
+        <div class="bundle">
+            <p class="p-sub">
+                この
+                <span class="softName-bu-s">colorCheck</span>
+                の最初のフォルダ内に、
+                <span class="filePath-pickup-bu-r">MainColorCheck&#46;ahk</span>
+                というファイルがあるはずです。
+            </p>
+            <p class="p-sub">
+                そのファイルと同じフォルダに、
+                <span class="othersoft-r">AutoHotkey.exe</span>
+                を配置してください。
+            </p>
+        </div>
+        <div class="bundle">
+            <p class="p-sub">
+                後は、その
+                <span class="othersoft-r">AutoHotkey.exe</span>
+                を、
+                <span class="filePath-pickup-bu-r">MainColorCheck&#46;ahk</span>
+                のファイルがパラメータになるようにして実行すれば、
+                <span class="softName-bu-r">colorCheck</span>
+                が起動します。
+            </p>
+        </div>
+        <div class="example-one-color d-type-small-basic-no-top">
+            <div class="example-one-caption-color">
+                例
+            </div>
+            <p class="p-sub">
+                ショートカットのファイルを用意して使うなら
+            </p>
+            <div class="creation-item-block-color">
+                リンク先
+            </div>
+            <div class="width-long-wrap">
+                <div class="creation-variable-block-color width-long-sub5px">
+                    &#91;colorCheckのフォルダ&#93;&#92;AutoHotkeyU32&#46;exe&nbsp;&nbsp;&#91;colorCheckのフォルダ&#93;&#92;MainColorCheck&#46;ahk
+                </div>
+            </div>
+            <p class="p-sub">
+                これをリンク先に指定しているショートカットを作れば、それから実行する事ができます。
+            </p>
+            <!--  スペース   -->
+            <div class="spacer-1"></div>
+           <div class="supplement inner">
+               <div class="supplement-caption">
+                   補足
+               </div>
+               <p class="p-sub">
+                   <span class="softName-bu-r">TextRunRun</span>
+                   の
+                   <span class="softDfn-bu">アイテム</span>
+                   から使える様にするなら、
+               </p>
+               <div class="creation-item-block-color">
+                   リンク先
+               </div>
+               <div class="creation-variable-block-color">
+                   &#91;colorCheckのフォルダ&#93;&#92;AutoHotkeyU32&#46;exe
+               </div>
+               <div class="creation-item-block-color">
+                   引数
+               </div>
+               <div class="creation-variable-block-color">
+                   &#91;colorCheckのフォルダ&#93;&#92;MainColorCheck&#46;ahk
+               </div>
+               <p class="p-sub">
+                   こんなものを用意して使う様にする。
+               </p>
+           </div>
+            <!--  スペース   -->
+            <div class="spacer-1"></div>
+            <div class="div-sub">
+                <p class="brackets">
+                    作業フォルダーは、無記入でも何を指定しても同じです。<br />
+                    <span class="filePath-pickup-bu-r">MainColorCheck&#46;ahk</span>
+                    がある位置が作業フォルダーになる様になっています。
+                </p>
+            </div>
+        </div>
+    </section><!-- sectionFirst -->
+    <section id="title2" class="sectionFirst d-type-basic">
+        <h1 class="t-lank1">colorCheck の事あれこれ</h1>
+        <p class="p-sub">
+            この
+            <span class="softName-bu-s">colorCheck</span>
+            はウインドウを見れば分かる通りのものです。
+        </p>
+        <p class="p-sub">
+            そして、あれが全てです。
+        </p>
+        <p class="p-sub">
+            なので、あれこれ書くのは返って読むのが煩わしい事になるのかもしれませんが、書ける事は書いておこうと思います。
+        </p>
+        <section id="title2_1" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">終了の仕方</h2>
+            <p class="p-sub">
+                起動すると、ウインドウが表示します。<br />
+                そしてこのウインドウがメインのウインドウです。
+            </p>
+            <p class="p-sub">
+                よって、ウインドウを閉じるとこの
+                <span class="softName-bu-s">colorCheck</span>
+                は終了します。
+            </p>
+            <p class="p-sub">
+                <kbd class="keyAny-bu">Esc</kbd>
+                キーを押しても同じです。
+                <span class="softName-bu-s">colorCheck</span>
+                は終了します。
+            </p>
+            <div class="supplement">
+                <div class="supplement-caption">
+                    補足
+                </div>
+                <p class="p-sub">
+                    私ブランボンが作ったものは、
+                    <kbd class="keyAny-bu">Esc</kbd>
+                    キーを押すとウインドウが閉じる様になっているものばかりだったりします。
+                </p>
+                <p class="p-sub">
+                    ただ、
+                    <kbd class="keyAny-bu">Esc</kbd>
+                    キーを押した場合はソフトは終了せず、ウインドウが非表示になるだけのものが大半です。
+                </p>
+                <p class="p-sub">
+                    そうなのですが、この
+                    <span class="softName-bu-s">colorCheck</span>
+                    は
+                    <kbd class="keyAny-bu">Esc</kbd>
+                    キーを押すと終了までする珍しいものだったりします。
+                </p>
+            </div>
+            <div class="bundle">
+                <p class="p-sub">
+                    一応、
+                    <span class="autoHotkey-bu">AutoHotkey</span>
+                    を使っているのでタスクトレイにアイコンが常駐するソフトだったりします。
+                </p>
+                <p class="p-sub">
+                    ですが、タスクトレイにあるアイコンにはほとんど意味はありません。
+                </p>
+                <p class="p-sub">
+                    終了する時はウインドウさえ閉じればよいです。
+                </p>
+            </div>
+        </section><!-- sectionSecond -->
+        <section id="title2_2" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">スライドバー</h2>
+            <p class="p-sub">
+                下の方に、３種類のスライドバーがあります。
+            </p>
+            <p class="p-sub">
+                <span class="guiText-r">R</span>
+                、
+                <span class="guiText-r">G</span>
+                、
+                <span class="guiText-r">B</span>
+                と、<br />
+                赤、緑、青
+                の配色の括りに分かれています。
+            </p>
+            <p class="p-sub">
+                上が
+                <span class="pickup-easy-s">0</span><br />
+                下が
+                <span class="pickup-easy-s">255</span><br />
+                になり、その数字の色がウインドウに反映されます。
+            </p>
+            <p class="p-sub">
+                他の入力欄にも記入され、一番上の入力欄には
+                <em class="em-basic">RGB形式</em>
+                の１６進数の６桁の文字が記入されます。
+            </p>
+            <p class="p-sub">
+                なのでこの色が
+                <em class="em-basic">RGB形式</em>
+                で、どの文字列になるのかを確認するのに都合がいいです。
+            </p>
+        </section><!-- sectionSecond -->
+        <section id="title2_3" class="sectionSecond d-type-basic">
+            <h2 class="t-lank2">ボタン</h2>
+            <p class="p-sub">
+                いろいろボタンがありますが、文字の入力欄の一つ下のボタンがその入力欄用のボタンと思っていいです。
+            </p>
+            <p class="p-sub">
+                なので、入力欄に記入したら、一つ下のボタンを使うという事が分かればよいです。
+            </p>
+            <div class="bundle">
+                <p class="p-sub">
+                    ちなみに、右に
+                    <span class="button-gui-bu-s">On</span>
+                    のボタンがありますが、これはウインドウに色を反映するかどうかという違いだけです。
+                </p>
+                <p class="p-sub">
+                    それ以外は左側のボタンと同じです。<br />
+                    左側のボタンはその他の入力欄に文字を記入するだけですが、<br />
+                    <span class="button-gui-bu-r">On</span>
+                    を押せば、その他の入力欄に記入しながら色をウインドウに反映します。
+                </p>
+            </div>
+        </section><!-- sectionSecond -->
+        <div class="div-section-one d-type-basic">
+            <p class="p-sub">
+                この
+                <span class="softName-bu-s">colorCheck</span>
+                で説明する事は以上です。
+            </p>
+            <p class="p-sub">
+                こんな説明だけで終わるシンプルなものです。
+            </p>
+        </div><!--  div-section-one  -->
+        
+    </section><!-- sectionFirst -->
+
+</div><!-- width-short -->
+
+</article>
+
+</main>
+
+    <div id="edgeMenuArea">
+        <nav class="nav-side">
+            <div class="edgeAreaSpace">
+                <p class="p-sub">
+                    何かに使うかもしれないサイドエリア
+                </p>
+            </div>
+        </nav>
+        
+    </div><!-- edgeMenuArea -->
+
+</div><!-- page-contents -->
+
+<footer id="footer-wrapper">
+    <div id="footer-trrpage">
+        <div class="footer-trrpage-block">
+            <div class="footer-trrpage-caption">
+                作者ブランボンのホームページ：
+            </div>
+            <div class="footer-trrpagelink">
+                <p class="footer-trrpagelink-p">
+                    <span class="trrhomepage spacePlus-r"><a href="https://textrunrunburanbon.com">TextRunRunの説明を見るページ</a></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="footer-buranbon">
+        <small id="small-footer-buranbon"><span id="in-footer-buranbon">Copyright &copy; ブランボン</span></small>
+    </div>
+</footer>
+
+    <div id="div-pageTop-oth">
+        <a href="#pagetop-first" class="a-pageTop-oth"><span class="span-pageTop-up-oth">↑</span></a>
+    </div>
+
+    <button id="anywhere-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    <nav id="anywhere-menu">
+        <ul class="ul-index-preface">
+            <li>
+                <a href="#title_preface">前書き</a>
+            </li>
+        </ul>
+        <ul class="ul-index-thispage">
+            <li>
+                <a href="#title1">起動の仕方</a>
+            </li>
+            <li>
+                <a href="#title2">colorCheck の事あれこれ</a>
+                <ul class="ul-index-thispage-2">
+                    <li>
+                        <a href="#title2_1">終了の仕方</a>
+                    </li>
+                    <li>
+                        <a href="#title2_2">スライドバー</a>
+                    </li>
+                    <li>
+                        <a href="#title2_3">ボタン</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+</div><!-- allContents -->
+</body>
+</html>

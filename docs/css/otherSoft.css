@@ -1,0 +1,770 @@
+@charset "utf-8";
+
+
+
+
+
+.h1-header {
+    margin: 0 20px 20px 0;
+    font-size: 22px;
+
+    padding-left: 20px;
+    padding-top: 5px;
+
+}
+
+.header-bottomspace{
+    margin-bottom: 3em;
+}
+
+/*--------------------------
+  インデックスページ用の
+---------------------------*/
+
+.t-index-oneElem{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    padding-left: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 14em;
+    border-bottom: 5px solid #00bbdd
+}
+
+.index-oneElem{
+    font-size: 1.1rem;
+}
+
+.index-oneElem a,
+.index-oneElem a:link,
+.index-oneElem a:visited {
+    color: #276CD8;
+    text-decoration: none;
+}
+
+.index-oneElem a:hover,
+.index-oneElem a:focus,
+.index-oneElem a:active { color: #F90;}
+
+.index-column2{
+    column-count: 2;
+    column-rule: 1px solid #ffbb66;
+    column-gap: 30px;
+}
+
+ul.index-basic-top li{
+    text-indent: -1.3em;
+    padding-left: 1.3em;
+}
+
+ul.index-basic-top li::before{
+    margin-right: 0.8em;
+    content: "■";
+    font-size: 0.7em;
+}
+
+/*--------------------------
+ ダウンロードリンク
+---------------------------*/
+
+#download-head-block{
+    position: relative;
+    padding-top: 2rem;
+}
+
+#download-head-block2{
+    border-style: solid;
+    border-width: 5px;
+    border-color: #0f0;
+}
+
+#download-head-word{
+    position: absolute;
+    display: block;
+    top: 1rem;
+    left: 1rem;
+    width: 10rem;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #0f0;
+    background-color: #fff;
+}
+
+.download-head-onebundle{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+}
+
+.a-download-head{
+    display: block;
+    width: 9rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+}
+
+.download-head-button{
+    display: block;
+    position: relative;
+    width: 9rem;
+    top: -2px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #00174d;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000;
+    background: -webkit-linear-gradient(top, #b9ffe0 0%, #34ffc1 100%);
+    background: linear-gradient(180deg, #b9ffe0, #34ffc1);
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    behavior: url(../itemCss/border-radius.htc);
+    box-shadow: 2px 3px 0 3px #000;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+.download-head-button.btn{
+    top: 1px;
+    box-shadow: 0 1px 0 0 #000;
+}
+
+
+/*--------------------------
+  通常
+---------------------------*/
+
+/* ソフト名。TextRunRun.css と区別する。 */
+span.softName-bu {
+    color: #3EB9FF;
+}
+
+span.softName-bu-s {
+    margin-left: 7px;
+    margin-right: 7px;
+
+    color: #3EB9FF;
+}
+
+span.softName-bu-r {
+    margin-right: 7px;
+
+    color: #3EB9FF;
+}
+
+span.pickup-easy-r,
+span.pickup-easy-2-r{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+span.pickup-easy-s,
+span.pickup-easy-2-s{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+span.filePath-pickup-bu-s{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+span.filePath-pickup-bu-r{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.blank-siteword{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/*  textRunRunで定義した文字  */
+span.softDfn-bu {
+    color: #00B2B2;
+}
+
+span.softDfn-bu-s {
+    color: #00B2B2;
+    margin: 0 7px;
+}
+
+span.softDfn-bu-r {
+    color: #00B2B2;
+    margin-right: 7px;
+}
+
+/*  常時使用のショートカットキー */
+kbd.keyAny-bu {
+    padding: 0 5px;
+    color: #2EAA83;
+    border: 1px solid #272E5D;
+}
+
+kbd.keyAny-bu-s {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0 5px;
+    color: #2EAA83;
+    border: 1px solid #272E5D;
+}
+
+kbd.keyAny-bu-r {
+    margin-right: 5px;
+    padding: 0 5px;
+    color: #2EAA83;
+    border: 1px solid #272E5D;
+}
+
+kbd.keyAny-combi-bu {
+    padding: 0 5px;
+    border: 1px solid #272E5D;
+}
+
+/*  組み合わせキーの 1キー   常時使用キーの場合 */
+kbd.keyAny-combi-bu kbd.onekey {
+    color: #2EAA83;
+    font-weight: normal;
+}
+
+/*  + の文字  */
+kbd.keyAny-combi-bu span.plusofkey {
+    padding: 0 5px;
+}
+
+kbd.keyAny-combi-bu-s {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0 5px;
+    border: 1px solid #272E5D;
+}
+
+/*  組み合わせキーの 1キー   常時使用キーの場合 */
+kbd.keyAny-combi-bu-s kbd.onekey {
+    color: #2EAA83;
+    font-weight: normal;
+}
+
+/*  + の文字  */
+kbd.keyAny-combi-bu-s span.plusofkey {
+    padding: 0 5px;
+}
+
+kbd.keyAny-combi-bu-r {
+    margin-right: 5px;
+    padding: 0 5px;
+    border: 1px solid #272E5D;
+}
+
+/*  組み合わせキーの 1キー   常時使用キーの場合 */
+kbd.keyAny-combi-bu-r kbd.onekey {
+    color: #2EAA83;
+    font-weight: normal;
+}
+
+/*  + の文字  */
+kbd.keyAny-combi-bu-r span.plusofkey {
+    padding: 0 5px;
+}
+
+/* AutoHotkey の文字。TextRunRun.css と区別する。 */
+.autoHotkey-bu {
+    /*	var_ahk_color*/
+    color: #76BC76;
+}
+
+.autoHotkey-bu-s {
+    margin-left: 7px;
+    margin-right: 7px;
+
+    /*	var_ahk_color*/
+    color: #76BC76;
+
+}
+
+.autoHotkey-bu-r {
+    margin-right: 7px;
+
+    /*	var_ahk_color*/
+    color: #76BC76;
+}
+
+/* ahkのコマンド。TextRunRun.css と区別する。 */
+span.ahkComm-bu {
+    /*	var_ahk_color*/
+    font-size: 1.1em;
+    color: #5DFF5D;
+}
+
+span.ahkComm-bu-s {
+    margin-left: 7px;
+    margin-right: 7px;
+
+    /*	var_ahk_color*/
+    font-size: 1.1em;
+    color: #5DFF5D;
+}
+
+span.ahkComm-bu-r {
+    margin-right: 7px;
+
+    /*	var_ahk_color*/
+    font-size: 1.1em;
+    color: #5DFF5D;
+}
+
+/*  Guiのコントロールの文字をこの色に  */
+span.guiText-bu-s {
+    margin-left: 7px;
+    margin-right: 7px;
+    padding: 5px 5px;
+
+    color: #0F0F0F;
+    background-color: #F0F0F0;
+}
+
+span.guiText-bu-r {
+    margin-right: 7px;
+    padding: 5px 5px;
+
+    color: #0F0F0F;
+    background-color: #F0F0F0;
+}
+
+/*  ウインドウタイトル名  */
+span.windowName-bu {
+    color: #FF8B8B;
+}
+
+span.windowName-bu-s {
+    margin-left: 7px;
+    margin-right: 7px;
+
+    color: #FF8B8B;
+}
+
+span.windowName-bu-r {
+    margin-right: 7px;
+
+    color: #FF8B8B;
+}
+
+/*  例  長いブロックで  */
+div.example-bu {
+    margin: 10px 0 15px 0;
+    padding: 10px;
+    border: 2px solid #74C1F0;
+
+    /*    background-color: #f8f8ff;*/
+}
+
+/*  ファイルパスならこの色  */
+span.filePath-bu {
+    color: #AA8B00;
+}
+
+span.filePath-bu-s {
+    margin-left: 7px;
+    margin-right: 7px;
+
+    color: #AA8B00;
+}
+
+span.filePath-bu-r {
+    margin-right: 7px;
+
+    color: #AA8B00;
+}
+
+span.filePath-pickup-bu-s{
+    margin-left: 7px;
+    margin-right: 7px;
+
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #AA8B00;
+    border: 1px solid #F0F70F;
+    background-color: #FFFFD8;
+}
+
+span.filePath-pickup-bu-r{
+    margin-right: 7px;
+
+    padding-left: 7px;
+    padding-right: 7px;
+    color: #AA8B00;
+    border: 1px solid #F0F70F;
+    background-color: #FFFFD8;
+}
+
+/* ボタン */
+.button-gui-bu {
+    padding: 0 15px;
+
+    border: 3px outset #808080;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+
+/* ボタン */
+.button-gui-bu-s {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 3px 15px;
+
+    border: 3px outset #808080;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+
+/* ボタン */
+.button-gui-bu-r {
+    margin-right: 5px;
+    padding: 3px 15px;
+
+    border: 3px outset #808080;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+
+/* 見出しでボタンを */
+.h-button-bu {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+    padding: 0 30px 0.7em;
+    width: 400px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #8BC1B9;
+}
+
+/* 見出しの中のボタン */
+.h-button-bu .button{
+    margin-right: 10px;
+    padding: 3px 15px;
+
+    border: 3px outset #808080;
+    border-radius: 5px;
+    background-color: #D9D9D9;
+}
+
+.h-guiText-bu{
+    margin-left: -20px;
+    padding: 0.4em 0.5em;
+    color: #494949;
+    font-size: 1.2em;
+    background-color: #F0F0F0;
+    border-left: 4px solid #7DB4E6;
+    border-bottom: 3px solid #D7D7D7;
+}
+
+/*  入力の例用のボックス  divで */
+div.inputBox-bu {
+    padding: 10px;
+    /* var(--font-family-input) */
+    font-family: 'メイリオ',Meiryo,'Segoe UI', Arial, 'Segoe UI Symbol', system-ui;
+    line-height: 170%;
+    color: #0F004D;
+    /* var(--word-spacing-input) */
+    word-spacing: 5px;
+    border: 2px solid #27C1A2;
+    background-color: #FFFFFF;
+    overflow: auto;
+}
+
+/*  入力の例用  一行  divで  */
+div.inputOneLine-bu{
+    padding-left: 2.5em;
+    padding-right: 10px;
+    text-indent: -2em;
+
+    /* var(--font-family-input) */
+    font-family: 'メイリオ',Meiryo,'Segoe UI', Arial, 'Segoe UI Symbol', system-ui;
+    color: #0F004D;
+    /* var(--word-spacing-input) */
+    word-spacing: 5px;
+    border: 2px solid #27C1A2;
+    background-color: #FFFFFF;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+/*  ただのcode  */
+code.srcCode-bu {
+    font-family: inherit;
+    color: #0F004D;
+}
+
+/*  ただのcode。pre表示  */
+code.srcCode-pre-bu {
+    font-family: inherit;
+    color: #0F004D;
+    white-space: pre;
+}
+
+
+/*  次のページ。前へ  次へ  以外の文字を使う */
+.pagination-title{
+    overflow: hidden;
+}
+
+a.pt-prev,
+a.pt-next{
+    float: left;
+    position: relative;
+    display: block;
+    width: 11em;
+    margin-bottom: 1em;
+    background-color: #0bd;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.pt-prev:hover,
+.pt-next:hover{
+    background-color: #0090aa;
+}
+
+.pt-prev{
+    border-radius: 2rem 0 0 2rem;
+    padding: 0.5rem 2rem 0.5rem 3rem;
+}
+
+.pt-next{
+    border-radius: 0 2rem 2rem 0;
+    margin-left: 0.5em;
+    padding: 0.5rem 3rem 0.5rem 2rem;
+}
+
+.pt-prev::before,
+.pt-next::before{
+    position: absolute;
+    display: block;
+    width: 1em;
+    top: 0.5rem;
+
+    font-weight: 900;
+}
+
+.pt-prev::before{
+    left: 1.3rem;
+    content: '←';
+}
+
+.pt-next::before{
+    right: 1.3rem;
+    content: '→';
+}
+
+
+/* ページ下部のトップページナビ。*/
+.foot-pt-top{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.foot-pt-top a{
+    padding-top: 10px;
+    padding-left: 110px;
+    text-decoration: none;
+    color: #276CD8;
+    background: url("../../../image/mini/pagetop.gif") no-repeat;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #0176EB;
+}
+
+.foot-pt-top a:hover{
+    color: #F90;
+    border-bottom-color: #F90;
+}
+
+
+ul.ul-foot-pt-index{
+    margin-top: 30px;
+
+}
+
+ul.ul-foot-pt-index li{
+    display: inline;
+    margin-right: 2em;
+
+    word-break: keep-all;
+}
+
+ul.ul-foot-pt-index li::before{
+    margin-right: 0.8em;
+    content: "■";
+    font-size: 0.7em;
+}
+
+ul.ul-foot-pt-index li a{
+    color: #276CD8;
+    text-decoration: none;
+}
+
+.foot-pt-current{
+    
+}
+
+/* このページ内でどこでも見れるようにするもの */
+#pageimg-area-item{
+
+}
+
+/* 表示ボタン */
+#pageimg-button{
+    position: fixed;
+    z-index: 110;
+    top: 30px;
+    right: 30px;
+    width: 74px;
+    height: 74px;
+    padding: 5px 0;
+    text-align: center;
+    color: #3E46F7;
+    cursor: pointer;
+    background-color: #93E0F7;
+    border: 2px solid #46C1F7;
+
+}
+
+#pageimg-content{
+    display: none;
+    position: fixed;
+    top: 90px;
+    right: 70px;
+    width: 400px;
+    height: 400px;
+    z-index: 5;
+    margin: 0;
+    padding: 20px;
+
+    background-color: #fffcff;
+    -moz-border-radius: 10px;/*for Firefox*/
+    -webkit-border-radius: 10px;/*for Safari and chrome*/
+    border-radius: 10px;
+    behavior: url(../itemCss/border-radius.htc);/*for IE*/
+    border: 3px solid #777;
+}
+
+/*
+#pageimg-content img{
+    width: 350px;
+}
+*/
+
+.miniwindow{
+    width: 56px;
+}
+
+/*  細かい仕様。ツールチップで表示する */
+.details-title{
+    margin-left: 20px;
+}
+
+.detail-explan {
+    position: relative;
+    margin-left: 50px;
+}
+
+.detail-explan-content {
+    display: none;
+    position: absolute;
+    left: -50px;
+    width: 500px;
+    padding: 10px 20px 10px;
+    background-color: #E8FFFF;
+    border: 3px solid #A2D1FF;
+    z-index: 2;
+}
+
+.detail-explan:HOVER  .detail-explan-content,
+.detail-explan:FOCUS  .detail-explan-content {
+    display: block;
+}
+
+.detail-explan-link{
+    text-decoration-line: none;
+    color: #3E46F7;
+    cursor: pointer;
+}
+
+/*  追加要素。ツールチップで表示する */
+.plus-explan {
+    margin-left: 50px;
+
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+    border: 3px solid #8BC1B2;
+
+    background-color: #E0FFD8;
+
+}
+
+details.plus-explan{
+    transition: 0.5s;
+}
+
+details.plus-explan[open]{
+    background: #F0FFF7;
+}
+
+.plus-explan-link{
+    margin-left: 20px;
+}
+
+/*--------------------------
+メディアクエリ
+------------------------------*/
+
+@media screen and (max-width: 750px){
+
+    div.inputOneLine-bu{
+        line-height: 170%;
+    }
+
+
+    code.srcCode-pre-bu{
+        white-space: normal;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+
+    #pageimg-content{
+        right: 20px;
+        width: 300px;
+    }
+
+    .h-button-bu {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .t-index-oneElem{
+        margin-left: 0;
+        width: auto;
+    }
+
+    .index-column2{
+        column-count: 1;
+    }
+
+}
